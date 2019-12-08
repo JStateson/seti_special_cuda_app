@@ -1,4 +1,5 @@
 #!/bin/bash
+# josephy@stateson.net for comments
 # place this bash script in the client folder of Tbar's Xbranch
 # this script uses your defined folder locations to create  "setvars.sh"
 # setvars.sh first renames the Makefile to Makefile.bu then sets your locations into it
