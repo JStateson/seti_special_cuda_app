@@ -12,7 +12,7 @@ FILE=Makefile.bu
 if [ ! -f "$FILE" ]; then
   cp Makefile Makefile.bu
 fi
-sed 's=/home/tbar/boinc/="$BOINCDIR"/=g' ../Makefile.bu | \
+sed 's=/home/tbar/boinc/="$BOINCDIR"/=g' Makefile.bu | \
 	sed 's=/home/tbar/boinc="$BOINCDIR"=g' | \
 	sed 's=/home/tbar/sah_v7_opt/Xbranch="$SETI_DIR"=g' | \
 	sed 's/cuda-10.1/cuda-10.2/g' > Makefile
