@@ -16,6 +16,7 @@ fi
 sed 's=/home/tbar/boinc/="$BOINCDIR"/=g' Makefile.bu | \
 	sed 's=/home/tbar/boinc="$BOINCDIR"=g' | \
 	sed 's=/home/tbar/sah_v7_opt/Xbranch="$SETI_DIR"=g' | \
+	sed 's/CUDA_VERSION = 101/CUDA_VERSON = 102/=g' | \
 	sed 's/cuda-10.1/cuda-10.2/g' > Makefile
 " > setvars.sh
 chmod +x setvars.sh
