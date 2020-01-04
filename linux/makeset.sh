@@ -10,9 +10,10 @@ SETI_DIR="/home/jstateson/Projects/Xbranch"
 echo "\
 #!/bin/bash
 FILE=Makefile.bu
-if [ ! -f "$FILE" ]; then
+#  always backup the makefile
+#if [ ! -f "$FILE" ]; then
   cp Makefile Makefile.bu
-fi
+#fi
 sed 's=/home/tbar/boinc/="$BOINCDIR"/=g' Makefile.bu | \
 	sed 's=/home/tbar/boinc="$BOINCDIR"=g' | \
 	sed 's=/home/tbar/sah_v7_opt/Xbranch="$SETI_DIR"=g' | \
